@@ -1,0 +1,73 @@
+	
+
+
+head {
+  background-color: blue;
+  color: white;
+}
+
+title {
+  background-color: green;
+  color: white;
+}
+
+.ET {
+  background-color: yellow;
+  color: black;
+}
+
+.SI {
+  background-color: lightblue;
+  color: black;
+}
+
+.PR {
+  background-color: lightgreen;
+  color: black;
+}
+
+.BD {
+  background-color: lightcoral;
+  color: black;
+}
+
+.DI {
+  background-color: lightyellow;
+  color: black;
+}
+
+.LM {
+  background-color: lightpink;
+  color: black;
+}
+
+.IN {
+  background-color: lightgray;
+  color: black;
+}
+
+.IT {
+  background-color: lightcyan;
+  color: black;
+}
+
+.RECREO {
+  background-color: lightseagreen;
+  color: black;
+}
+.SO {
+  background-color: lightgoldenrodyellow;
+  color: black;
+}
+.TITULO {
+  background-color: darkblue;
+  color: white;
+}
+.HORA {
+  background-color: darkgray;
+  color: white;
+}
+.TABLA {
+  background-color: white;
+  color: black;
+}
