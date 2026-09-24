@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+}
+
+.pagina {
+    width: 760px;
+    height: 310px;
+    margin: 20px auto;
+
+    position: relative;
+
+    background-image: url("flor.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h4 {
+    text-align: center;
+    color: red;
+    margin: 0;
+    padding-top: 12px;
+}
+
+h4 span {
+    color: black;
+}
+
+.boton {
+    background-color: #f0c400;
+    color: white;
+
+    border: none;
+
+    padding: 10px 14px;
+
+    font-size: 10px;
+
+    text-decoration: none;
+
+    display: inline-block;
+}
+
+.pre {
+    position: absolute;
+
+    left: 12px;
+    top: 88px;
+
+    font-size: 9px;
+
+    white-space: pre;
+}
+
+.google {
+    position: absolute;
+
+    left: 0;
+    top: 125px;
+
+    font-size: 10px;
+}
+
+.google .boton {
+    margin-left: 8px;
+}
+
+#capitulo4 {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 5px;
+
+    height: 55px;
+
+    background-color: #6c98e5;
+
+    border: 1px solid black;
+
+    padding: 10px 16px;
+
+    box-sizing: border-box;
+}
+
+#capitulo4 a {
+    display: inline-block;
+
+    background-color: white;
+
+    border: 1px solid #777;
+
+    padding: 2px 5px;
+
+    font-size: 8px;
+}
+
+#capitulo4 strong {
+    display: block;
+
+    font-size: 10px;
+
+    margin-top: 3px;
+}

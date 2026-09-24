@@ -1,0 +1,49 @@
+.contenedor {
+    width: 760px;
+    min-height: 280px;
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 14px;
+    color: red;
+    font-style: italic;
+}
+
+.imagen {
+    display: block;
+    width: 115px;
+    margin: 10px auto 15px auto;
+}
+
+p {
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.amarillo {
+    background-color: yellow;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #777;
+}
+
+a {
+    font-size: 10px;
+}
