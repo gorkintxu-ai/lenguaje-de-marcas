@@ -1,49 +1,366 @@
-.contenedor {
-    width: 760px;
-    min-height: 280px;
-    border: 1px solid blue;
-    padding: 5px;
+/* ===================================================== */
+/* ESTILOS GENERALES */
+/* ===================================================== */
+
+body {
+    font-family: "Times New Roman", serif;
 }
 
-h1 {
+
+/* ===================================================== */
+/* EJERCICIO 1 */
+/* FORMATO DEL TEXTO */
+/* ===================================================== */
+
+.ejercicio1 {
+
+    width: 760px;
+    min-height: 280px;
+
+    border: 1px solid blue;
+
+    padding: 5px;
+
+    margin-bottom: 40px;
+}
+
+
+.ejercicio1 h1 {
+
     font-size: 20px;
+
     margin-bottom: 10px;
 }
 
-h2 {
+
+.ejercicio1 h2 {
+
     font-size: 14px;
+
     color: red;
+
     font-style: italic;
 }
 
-.imagen {
+
+.imagen-cuaderno {
+
     display: block;
+
     width: 115px;
+
     margin: 10px auto 15px auto;
 }
 
-p {
+
+.ejercicio1 p {
+
     font-family: Verdana, sans-serif;
+
     font-size: 30px;
 }
 
+
 .amarillo {
+
     background-color: yellow;
 }
 
+
 .subrayado {
+
     text-decoration: underline;
 }
 
+
 .negrita {
+
     font-weight: bold;
 }
 
-hr {
+
+.ejercicio1 hr {
+
     border: 0;
+
     border-top: 1px solid #777;
 }
 
-a {
+
+.ejercicio1 a {
+
     font-size: 10px;
+}
+
+
+/* ===================================================== */
+/* EJERCICIO 2 */
+/* HIPERVÍNCULOS Y MARCADOR */
+/* ===================================================== */
+
+.ejercicio2 {
+
+    width: 760px;
+
+    height: 310px;
+
+    margin: 20px 0 40px 0;
+
+    position: relative;
+
+    background-image: url("flor.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+/* Encabezado */
+
+.ejercicio2 h4 {
+
+    text-align: center;
+
+    color: red;
+
+    margin: 0;
+
+    padding-top: 12px;
+}
+
+
+.ejercicio2 h4 span {
+
+    color: black;
+}
+
+
+/* Botones */
+
+.boton {
+
+    background-color: #f0c400;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 14px;
+
+    font-size: 10px;
+
+    text-decoration: none;
+
+    display: inline-block;
+}
+
+
+/* Botón capítulo 4 */
+
+.ejercicio2 > .boton {
+
+    position: absolute;
+
+    left: 5px;
+
+    top: 45px;
+}
+
+
+/* Texto preformateado */
+
+.texto-pre {
+
+    position: absolute;
+
+    left: 12px;
+
+    top: 88px;
+
+    font-size: 9px;
+
+    white-space: pre;
+}
+
+
+/* Enlace a Google */
+
+.enlace-google {
+
+    position: absolute;
+
+    left: 0;
+
+    top: 125px;
+
+    font-size: 10px;
+}
+
+
+.enlace-google .boton {
+
+    margin-left: 8px;
+}
+
+
+/* Capítulo 4 */
+
+#capitulo4 {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 5px;
+
+    height: 55px;
+
+    background-color: #6c98e5;
+
+    border: 1px solid black;
+
+    padding: 10px 16px;
+
+    box-sizing: border-box;
+}
+
+
+#capitulo4 a {
+
+    display: inline-block;
+
+    background-color: white;
+
+    border: 1px solid #777;
+
+    padding: 2px 5px;
+
+    font-size: 8px;
+}
+
+
+#capitulo4 strong {
+
+    display: block;
+
+    font-size: 10px;
+
+    margin-top: 3px;
+}
+
+
+/* ===================================================== */
+/* EJERCICIO 3 */
+/* TABLAS */
+/* ===================================================== */
+
+
+/* ------------------------- */
+/* TABLA 1 */
+/* ------------------------- */
+
+.tabla1 {
+
+    border-collapse: collapse;
+
+    border: 3px solid blue;
+
+    margin: 10px 0 30px 0;
+}
+
+
+.tabla1 caption {
+
+    font-style: italic;
+
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+
+.tabla1 th,
+.tabla1 td {
+
+    border: 3px solid blue;
+
+    padding: 18px 20px;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+.tabla1 th {
+
+    border: none;
+
+    padding-bottom: 6px;
+}
+
+
+/* ------------------------- */
+/* TABLA 2 */
+/* ------------------------- */
+
+.tabla2 {
+
+    border-collapse: collapse;
+
+    border: 3px solid #e0bd00;
+
+    margin: 10px 0;
+}
+
+
+.tabla2 caption {
+
+    font-style: italic;
+
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+
+.tabla2 th,
+.tabla2 td {
+
+    border: 2px solid #e0bd00;
+
+    padding: 20px 24px;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+
+/* Cabeceras */
+
+.tabla2 th {
+
+    background-color: #ddd;
+}
+
+
+/* Celdas verdes */
+
+.verde {
+
+    background-color: #9bd329;
+}
+
+
+/* Celdas grises */
+
+.gris {
+
+    background-color: #ddd;
 }

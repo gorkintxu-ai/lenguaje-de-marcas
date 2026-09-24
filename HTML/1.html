@@ -3,20 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio 1</title>
+    <title>Ejercicios HTML</title>
 
-    <link rel="stylesheet" href="CSS/ejercicio1.css">
+    <link rel="stylesheet" href="ejercicios.css">
 </head>
 
 <body>
 
-    <div class="contenedor">
+    <!-- ================================================= -->
+    <!-- EJERCICIO 1 - FORMATO DEL TEXTO -->
+    <!-- ================================================= -->
+
+    <section class="ejercicio1">
 
         <h1>Esto es un encabezado h1</h1>
 
         <h2>Esto es un encabezado h2</h2>
 
-        <img src="cuaderno.png" alt="Cuaderno" class="imagen">
+        <img src="cuaderno.png" alt="Cuaderno" class="imagen-cuaderno">
 
         <p>
             Esto es un párrafo con un
@@ -34,7 +38,219 @@
             Esto es un hipervínculo que va a Google
         </a>
 
-    </div>
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- EJERCICIO 2 - HIPERVÍNCULOS Y MARCADOR -->
+    <!-- ================================================= -->
+
+    <section class="ejercicio2" id="inicio">
+
+        <h4>
+            Esto es un encabezado h4
+            <span>h2</span>
+        </h4>
+
+        <!-- Enlace que lleva al capítulo 4 -->
+        <a href="#capitulo4" class="boton">
+            Ir a capítulo 4:
+        </a>
+
+        <p class="texto-pre">
+            Esto es un texto
+            preformateado
+        </p>
+
+        <div class="enlace-google">
+
+            Este hipervínculo va a Google
+
+            <a href="https://www.google.com"
+               target="_blank"
+               class="boton">
+
+                Ir a Google:
+
+            </a>
+
+        </div>
+
+
+        <!-- MARCADOR DEL CAPÍTULO 4 -->
+
+        <div id="capitulo4">
+
+            <a href="#inicio">
+                hipervínculo en la misma página
+            </a>
+
+            <strong>
+                Esto es el Capítulo 4
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================================= -->
+    <!-- EJERCICIO 3 - TABLAS -->
+    <!-- ================================================= -->
+
+    <section class="ejercicio3">
+
+        <!-- TABLA 1 -->
+
+        <table class="tabla1">
+
+            <caption>
+                Tabla prueba 1
+            </caption>
+
+            <tr>
+                <th>columna 1</th>
+                <th>columna 2</th>
+                <th>columna 3</th>
+                <th>columna 4</th>
+            </tr>
+
+            <tr>
+
+                <td>
+                    col1
+                </td>
+
+                <!-- colspan une dos columnas -->
+                <td colspan="2">
+                    col2
+                </td>
+
+                <!-- rowspan une dos filas -->
+                <td rowspan="2">
+                    col3
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+                    colum1
+                </td>
+
+                <td>
+                    colum2
+                </td>
+
+                <td>
+                    colum4
+                </td>
+
+            </tr>
+
+        </table>
+
+
+        <!-- TABLA 2 -->
+
+        <table class="tabla2">
+
+            <caption>
+                Tabla prueba 2
+            </caption>
+
+            <tr>
+
+                <th>columna 1</th>
+                <th>columna 2</th>
+                <th>columna 3</th>
+                <th>columna 4</th>
+
+            </tr>
+
+
+            <tr>
+
+                <td class="verde">
+                    col1
+                </td>
+
+                <!-- Une las columnas 2 y 3 -->
+                <td class="verde" colspan="2">
+                    col2
+                </td>
+
+                <td class="verde">
+                    col3
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td class="gris">
+                    colum1
+                </td>
+
+                <!-- Une dos filas -->
+                <td class="gris" rowspan="2">
+                    colum2
+                </td>
+
+                <td class="gris">
+                    colum3
+                </td>
+
+                <td class="gris">
+                    colum4
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td class="verde">
+                    column1
+                </td>
+
+                <td class="verde">
+                    column3
+                </td>
+
+                <td class="verde">
+                    column4
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <td class="gris">
+                    colu1
+                </td>
+
+                <td class="gris">
+                    colu2
+                </td>
+
+                <td class="gris">
+                    colu3
+                </td>
+
+                <td class="gris">
+                    colu4
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
 
 </body>
+
 </html>
