@@ -1,0 +1,90 @@
+body {
+    font-family: "Times New Roman", serif;
+}
+
+
+/* =========================
+   TABLA 1
+   ========================= */
+
+.tabla1 {
+    border-collapse: collapse;
+
+    border: 3px solid blue;
+
+    margin: 10px auto 30px auto;
+}
+
+.tabla1 caption {
+    font-style: italic;
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.tabla1 th,
+.tabla1 td {
+    border: 3px solid blue;
+
+    padding: 18px 20px;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+.tabla1 th {
+    border: none;
+
+    padding-bottom: 6px;
+}
+
+
+/* =========================
+   TABLA 2
+   ========================= */
+
+.tabla2 {
+    border-collapse: collapse;
+
+    border: 3px solid #e0bd00;
+
+    margin: 10px auto;
+}
+
+.tabla2 caption {
+    font-style: italic;
+
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.tabla2 th,
+.tabla2 td {
+    border: 2px solid #e0bd00;
+
+    padding: 20px 24px;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+.tabla2 th {
+    background-color: #ddd;
+}
+
+
+/* Celdas verdes */
+
+.verde {
+    background-color: #9bd329;
+}
+
+
+/* Celdas grises */
+
+.gris {
+    background-color: #ddd;
+}
