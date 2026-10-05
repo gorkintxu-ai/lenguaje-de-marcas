@@ -1,0 +1,518 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Ejercicios HTML - Listas, Menús y Bloques</title>
+
+    <style>
+
+        /* =====================================================
+           ESTILOS GENERALES
+           ===================================================== */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .contenedor-principal {
+            width: 85%;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            background-color: #62d3ed;
+            text-align: center;
+            font-size: 14px;
+            font-style: italic;
+            padding: 6px;
+            border-radius: 5px;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #999;
+            margin: 25px 0;
+        }
+
+
+        /* =====================================================
+           EJERCICIO 1 - LISTAS
+           ===================================================== */
+
+        #ejercicio1 li {
+            font-size: 13px;
+            margin: 4px 0;
+        }
+
+        #ejercicio1 ul,
+        #ejercicio1 ol {
+            margin-bottom: 20px;
+        }
+
+
+        /* =====================================================
+           EJERCICIO 2 - MENÚ HORIZONTAL
+           ===================================================== */
+
+        .menu-horizontal {
+            background-color: #898963;
+
+            padding: 0;
+            margin: 0;
+
+            display: flex;
+
+            list-style-type: none;
+        }
+
+        .menu-horizontal li {
+            margin: 0;
+        }
+
+        .menu-horizontal a {
+            display: block;
+
+            padding: 15px;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 17px;
+        }
+
+        .menu-horizontal a:hover {
+            background-color: #666644;
+        }
+
+
+        /* =====================================================
+           EJERCICIO 2 - MENÚ VERTICAL
+           ===================================================== */
+
+        .menu-vertical {
+            list-style-type: none;
+
+            padding: 0;
+            margin: 0;
+
+            width: 120px;
+        }
+
+        .menu-vertical li {
+            margin: 0;
+        }
+
+        .menu-vertical a {
+            display: block;
+
+            padding: 15px;
+
+            color: white;
+
+            background-color: #65e52d;
+
+            text-decoration: none;
+
+            font-size: 17px;
+        }
+
+        .menu-vertical a:hover {
+            background-color: #4ec91d;
+        }
+
+        /* Tercera opción en rojo */
+        .menu-vertical li:nth-child(3) a {
+            background-color: red;
+        }
+
+        .menu-vertical li:nth-child(3) a:hover {
+            background-color: darkred;
+        }
+
+
+        /* =====================================================
+           EJERCICIO 3 - DIV
+           ===================================================== */
+
+        .bloque-div {
+            background-color: #5f7589;
+
+            color: white;
+
+            padding: 25px;
+
+            min-height: 120px;
+
+            margin-bottom: 0;
+        }
+
+        .bloque-div h3 {
+            background-color: transparent;
+
+            text-align: left;
+
+            color: white;
+
+            padding: 0;
+
+            margin-top: 0;
+
+            font-style: normal;
+
+            font-size: 20px;
+        }
+
+        .bloque-div p {
+            font-size: 13px;
+
+            line-height: 1.5;
+        }
+
+
+        /* =====================================================
+           EJERCICIO 3 - SPAN
+           ===================================================== */
+
+        .bloque-texto {
+            background-color: #e2dda3;
+
+            color: black;
+
+            padding: 12px;
+
+            font-size: 13px;
+
+            line-height: 1.5;
+        }
+
+        .resaltado {
+            background-color: #d7d69a;
+
+            font-weight: bold;
+        }
+
+        .rojo {
+            color: red;
+
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<div class="contenedor-principal">
+
+
+    <!-- =====================================================
+         TÍTULO
+         ===================================================== -->
+
+    <h1>
+        Ejercicios HTML: Listas, menús, bloques y texto en línea
+    </h1>
+
+
+    <!-- =====================================================
+         EJERCICIO 1
+         ===================================================== -->
+
+    <section id="ejercicio1">
+
+        <h2>Ejercicio 1</h2>
+
+        <h3>Lista no ordenada</h3>
+
+        <ul>
+
+            <li>opcion1</li>
+
+            <li>
+                opcion2
+
+                <ul>
+                    <li>opcion21</li>
+                    <li>opcion22</li>
+                </ul>
+
+            </li>
+
+            <li>opcion3</li>
+
+            <li>opcion4</li>
+
+            <li>opcion5</li>
+
+        </ul>
+
+
+        <hr>
+
+
+        <h3>Lista ordenada</h3>
+
+        <ol>
+
+            <li>opcion1</li>
+
+            <li>
+                opcion2
+
+                <ol type="a">
+
+                    <li>opcion21</li>
+
+                    <li>
+                        opcion22
+
+                        <ol type="i">
+                            <li>opcion211</li>
+                            <li>opcion212</li>
+                        </ol>
+
+                    </li>
+
+                </ol>
+
+            </li>
+
+
+            <li>opcion3</li>
+
+
+            <li>
+                opcion4
+
+                <ol type="a">
+
+                    <li>
+                        opcion41
+
+                        <ol type="i">
+                            <li>opcion411</li>
+                            <li>opcion412</li>
+                        </ol>
+
+                    </li>
+
+                    <li>opcion42</li>
+
+                </ol>
+
+            </li>
+
+
+            <li>opcion5</li>
+
+        </ol>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- =====================================================
+         EJERCICIO 2
+         ===================================================== -->
+
+    <section id="ejercicio2">
+
+        <h2>Ejercicio 2</h2>
+
+
+        <!-- MENÚ HORIZONTAL -->
+
+        <h3>
+            Lista no ordenada -&gt; menú horizontal
+        </h3>
+
+
+        <ul class="menu-horizontal">
+
+            <li>
+                <a href="https://www.google.com">
+                    opcion1
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.google.com">
+                    opcion2
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.google.com">
+                    opcion3
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.google.com">
+                    opcion4
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.google.com">
+                    opcion5
+                </a>
+            </li>
+
+        </ul>
+
+
+        <hr>
+
+
+        <!-- MENÚ VERTICAL -->
+
+        <h3>
+            Lista no ordenada -&gt; menú vertical
+        </h3>
+
+
+        <ul class="menu-vertical">
+
+            <li>
+                <a href="https://www.google.com">
+                    opcion1
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.google.com">
+                    opcion2
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.google.com">
+                    opcion3
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.google.com">
+                    opcion4
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.google.com">
+                    opcion5
+                </a>
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- =====================================================
+         EJERCICIO 3
+         ===================================================== -->
+
+    <section id="ejercicio3">
+
+        <h2>Ejercicio 3</h2>
+
+
+        <!-- BLOQUE DIV -->
+
+        <div class="bloque-div">
+
+            <h3>bloque div</h3>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Donec aliquam tempor diam et accumsan.
+                Vestibulum varius, sapien ut dignissim interdum,
+                lorem risus lacinia enim, in mattis enim urna et sem.
+                Suspendisse ligula lorem, egestas finibus tellus sit amet,
+                finibus posuere tellus.
+                Mauris tempus consequat.
+                Etiam eu dapibus ante.
+                Sed at eros at sapien porttitor interdum nec leo.
+                Donec quis venenatis nulla eget nunc nisl.
+            </p>
+
+            <p>
+                Sed non feugiat lorem.
+                Praesent porttitor risus in consequat sagittis.
+                Maecenas ut magna interdum, euismod eros quis,
+                blandit neque.
+                Ut rhoncus magna eget tincidunt pellentesque.
+            </p>
+
+        </div>
+
+
+        <!-- BLOQUE CON SPAN -->
+
+        <div class="bloque-texto">
+
+            Lorem ipsum dolor sit amet,
+
+            <span class="resaltado">
+                consectetur adipiscing elit.
+            </span>
+
+            <span class="rojo">
+                Vivamus nec libero dignissim,
+            </span>
+
+            consequat ex, placerat velit.
+
+            In accumsan ornare leo,
+            eget pulvinar nunc accumsan sed.
+
+            Vestibulum dictum ante vel orci commodo posuere
+            eu ultricies nisi.
+
+            Praesent sed venenatis ligula.
+
+            Aenean ac congue sem, sit amet tincidunt sem.
+
+            Nullam magna sapien, consequat in ipsum sed,
+            volutpat vel lacus.
+
+            Sed in pellentesque nunc.
+
+            Praesent ullamcorper purus ut mollis semper.
+
+            Aenean bibendum eros ut tellus porttitor dignissim.
+
+        </div>
+
+    </section>
+
+
+</div>
+
+</body>
+</html>
+```
