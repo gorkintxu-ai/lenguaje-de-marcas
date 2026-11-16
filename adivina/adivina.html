@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adivina el número</title>
+  <style>
+    :root {
+      --primario: #2d6a9f;
+      --primario-oscuro: #1d4a70;
+      --acento: #f2a13b;
+      --texto: #23303c;
+      --blanco: #ffffff;
+      --sombra: 0 4px 12px rgba(0, 0, 0, 0.1);
+      --radio: 12px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f6f8fa;
+      color: var(--texto);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .juego {
+      width: 100%;
+      max-width: 520px;
+      background-color: var(--blanco);
+      border-radius: var(--radio);
+      box-shadow: var(--sombra);
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: var(--primario-oscuro);
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .instrucciones {
+      font-size: 0.95rem;
+      background-color: #eef2f5;
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .marcador {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .marcador .ganadas { color: #1b6b3a; }
+    .marcador .perdidas { color: #9c2b2b; }
+
+    .entrada {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    input[type="number"] {
+      flex: 1;
+      padding: 0.75rem;
+      font-size: 1.1rem;
+      border: 2px solid #d7dde3;
+      border-radius: 8px;
+      text-align: center;
+      font-family: inherit;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    input[type="number"]:focus {
+      outline: none;
+      border-color: var(--primario);
+      box-shadow: 0 0 0 3px rgba(45, 106, 159, 0.2);
+    }
+
+    .btn {
+      padding: 0.75rem 1.4rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      background-color: var(--primario);
+      color: var(--blanco);
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.15s;
+    }
+
+    .btn:hover { background-color: var(--primario-oscuro); transform: scale(1.03); }
+    .btn:disabled { background-color: #b8c2cc; cursor: not-allowed; transform: none; }
+
+    .btn-nueva {
+      width: 100%;
+      background-color: var(--acento);
+      color: var(--texto);
+    }
+
+    .btn-nueva:hover { background-color: #d98d26; }
+
+    .mensaje {
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 8px;
+      background-color: #eef2f5;
+      min-height: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      transition: background-color 0.3s;
+    }
+
+    .mensaje.acierto { background-color: #d9f2e2; color: #1b6b3a; }
+    .mensaje.fallo { background-color: #fbe0e0; color: #9c2b2b; }
+    .mensaje.pista { background-color: #fdf1d6; color: #8a6412; }
+
+    .intentos {
+      text-align: center;
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .intentos strong { color: var(--primario-oscuro); }
+
+    @media (max-width: 480px) {
+      .juego { padding: 1.25rem; }
+      .entrada { flex-direction: column; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="juego">
+    <h1>Adivina el número</h1>
+
+    <p class="instrucciones">
+      He pensado un número entre el <strong>1</strong> y el <strong>100</strong>.
+      Tienes <strong>7 intentos</strong> para adivinarlo. Te diré si el número
+      secreto es mayor o menor que el tuyo.
+    </p>
+
+    <div class="marcador">
+      <span class="ganadas">Ganadas: <span id="partidasGanadas">0</span></span>
+      <span class="perdidas">Perdidas: <span id="partidasPerdidas">0</span></span>
+    </div>
+
+    <div class="entrada">
+      <input type="number" id="numeroUsuario" min="1" max="100"
+             placeholder="Escribe un número del 1 al 100">
+      <button class="btn" id="botonComprobar">Comprobar</button>
+    </div>
+
+    <p class="intentos">
+      Intentos: <strong id="intentos">0</strong> /
+      <strong id="maxIntentos">7</strong>
+    </p>
+
+    <p class="mensaje" id="mensaje">Escribe un número y pulsa Comprobar</p>
+
+    <button class="btn btn-nueva" id="botonNuevaPartida">Nueva partida</button>
+  </main>
+
+  <script src="adivina.js"></script>
+</body>
+</html>
